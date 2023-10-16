@@ -6,7 +6,10 @@
     <select id="getAll" resultType="com.atu.entity.Heroes">
         select * from heroes
     </select>
-    <select id="getq" resultType="com.atu.entity.Heroes">
-        select hid,name,type from heroes
+    <select id="findByName" resultType="com.atu.entity.Heroes">
+        select * from heroes where name =#{name}
+    </select>
+    <select id="findByType" resultType="com.atu.entity.Heroes">
+        select * from heroes where type =#{type}
     </select>
 </mapper>

@@ -10,4 +10,6 @@ import java.util.List;
 @Component
 public interface HeroService {
     List<Heroes> getAll();
+    Heroes findByName(String name);
+    List<Heroes> findByType(String type);
 }

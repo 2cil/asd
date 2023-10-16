@@ -16,4 +16,14 @@ public class HeroServiceImpl implements HeroService {
     public List<Heroes> getAll(){
         return heroMapper.getAll();
     }
+
+    @Override
+    public Heroes findByName(String name) {
+        return heroMapper.findByName(name);
+    }
+
+    @Override
+    public List<Heroes> findByType(String type) {
+        return heroMapper.findByType(type);
+    }
 }
